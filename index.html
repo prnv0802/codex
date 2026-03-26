@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Zero-Trust Multi-Agent Connection Protocol</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <main class="app-shell">
+      <header class="hero">
+        <p class="kicker">Interactive Concept Demo</p>
+        <h1>Multi-Agent Connection Protocol</h1>
+        <p class="subtitle">
+          A visual story of autonomous agents coordinating through a blockchain layer with
+          <span>zero central trust</span>.
+        </p>
+        <p class="instruction">Click any card or block to open detailed explanation.</p>
+      </header>
+
+      <section class="visual-panel" aria-label="Animated protocol visualization">
+        <div class="network-stage" id="network-stage">
+          <div class="glow-ring"></div>
+          <div class="blockchain-track" id="chain"></div>
+          <svg class="links" viewBox="0 0 1000 620" preserveAspectRatio="none" aria-hidden="true">
+            <path d="M 170 150 C 320 80, 420 80, 500 190" />
+            <path d="M 170 470 C 280 520, 440 520, 500 430" />
+            <path d="M 830 150 C 700 120, 590 110, 500 190" />
+            <path d="M 830 470 C 690 500, 560 510, 500 430" />
+            <path d="M 500 190 C 530 240, 530 350, 500 430" />
+            <path d="M 170 150 C 330 310, 660 310, 830 150" />
+            <path d="M 170 470 C 340 320, 660 320, 830 470" />
+          </svg>
+
+          <button class="agent explainable" data-topic="agentA" style="--x: 100px; --y: 90px; --delay: 0s">
+            <h2>Agent A</h2>
+            <p>Identity signed</p>
+            <span class="status">Verifying</span>
+          </button>
+          <button class="agent explainable" data-topic="agentB" style="--x: 100px; --y: 410px; --delay: 0.8s">
+            <h2>Agent B</h2>
+            <p>Policy sandbox</p>
+            <span class="status">Negotiating</span>
+          </button>
+          <button class="agent explainable" data-topic="agentC" style="--x: 740px; --y: 90px; --delay: 1.6s">
+            <h2>Agent C</h2>
+            <p>Claims encrypted</p>
+            <span class="status">Syncing</span>
+          </button>
+          <button class="agent explainable" data-topic="agentD" style="--x: 740px; --y: 410px; --delay: 2.4s">
+            <h2>Agent D</h2>
+            <p>Proof attached</p>
+            <span class="status">Consensus</span>
+          </button>
+
+          <button class="validator explainable" data-topic="trustLayer" style="--x: 430px; --y: 150px">
+            <h3>Trust Layer</h3>
+            <p>Shared validator quorum</p>
+          </button>
+          <button class="validator explainable" data-topic="auditLayer" style="--x: 430px; --y: 390px">
+            <h3>Audit Layer</h3>
+            <p>Immutable attestations</p>
+          </button>
+        </div>
+      </section>
+
+      <section class="concept-map" aria-label="Protocol walkthrough">
+        <h2>Interactive Walkthrough</h2>
+        <div class="map-grid">
+          <button class="map-card explainable" data-topic="discovery">
+            <h3>1. Agent Discovery</h3>
+            <p>Agents find peers and exchange verifiable decentralized identifiers.</p>
+          </button>
+          <button class="map-card explainable" data-topic="policyNegotiation">
+            <h3>2. Policy Negotiation</h3>
+            <p>Both sides agree scopes, usage controls, and runtime governance conditions.</p>
+          </button>
+          <button class="map-card explainable" data-topic="proofExchange">
+            <h3>3. Proof Exchange</h3>
+            <p>Agents exchange signed claims, encrypted capabilities, and risk posture proofs.</p>
+          </button>
+          <button class="map-card explainable" data-topic="onChainIntent">
+            <h3>4. On-Chain Intent</h3>
+            <p>Handshake intent is submitted to a decentralized validator set as a transaction.</p>
+          </button>
+          <button class="map-card explainable" data-topic="consensus">
+            <h3>5. Consensus</h3>
+            <p>Validators agree on transaction validity without any centralized authority.</p>
+          </button>
+          <button class="map-card explainable" data-topic="sessionOpen">
+            <h3>6. Session Open</h3>
+            <p>Agents open a trusted channel once proof checks and policy constraints pass.</p>
+          </button>
+          <button class="map-card explainable" data-topic="continuousAudit">
+            <h3>7. Continuous Audit</h3>
+            <p>State changes, delegated actions, and alerts stream as signed attestations.</p>
+          </button>
+          <button class="map-card explainable" data-topic="revocation">
+            <h3>8. Revocation & Recovery</h3>
+            <p>Compromised keys, revoked permissions, and quarantines are propagated instantly.</p>
+          </button>
+        </div>
+      </section>
+
+      <section class="info-grid">
+        <button class="explainable" data-topic="noCentralBroker">
+          <h3>No central broker</h3>
+          <p>Each agent verifies peers through cryptographic proofs, not a central server.</p>
+        </button>
+        <button class="explainable" data-topic="onChainHandshake">
+          <h3>On-chain handshake</h3>
+          <p>Session intents and policy decisions are committed as tamper-evident blocks.</p>
+        </button>
+        <button class="explainable" data-topic="continuousCompliance">
+          <h3>Continuous compliance</h3>
+          <p>Runtime transitions remain observable for governance and enterprise audit teams.</p>
+        </button>
+      </section>
+    </main>
+
+    <aside class="modal" id="detail-modal" aria-hidden="true" role="dialog" aria-modal="true" aria-labelledby="modal-title">
+      <div class="modal-backdrop" data-close-modal></div>
+      <article class="modal-card">
+        <button class="close-modal" aria-label="Close details" data-close-modal>×</button>
+        <p class="modal-tag" id="modal-tag">Protocol Detail</p>
+        <h2 id="modal-title"></h2>
+        <p id="modal-summary"></p>
+        <div class="modal-columns">
+          <section>
+            <h3>Why this matters</h3>
+            <p id="modal-why"></p>
+          </section>
+          <section>
+            <h3>What the customer sees</h3>
+            <ul id="modal-points"></ul>
+          </section>
+        </div>
+      </article>
+    </aside>
+
+    <script src="script.js"></script>
+  </body>
+</html>
