@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Zero-Trust Multi-Agent Connection Protocol</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <main class="app-shell">
+      <header class="hero">
+        <p class="kicker">Concept Demo UI</p>
+        <h1>Multi-Agent Connection Protocol</h1>
+        <p class="subtitle">
+          A visual story of autonomous agents coordinating through a blockchain layer with
+          <span>zero central trust</span>.
+        </p>
+      </header>
+
+      <section class="visual-panel" aria-label="Animated protocol visualization">
+        <div class="network-stage" id="network-stage">
+          <div class="glow-ring"></div>
+          <div class="blockchain-track" id="chain"></div>
+          <svg class="links" viewBox="0 0 1000 620" preserveAspectRatio="none">
+            <path d="M 170 150 C 320 80, 420 80, 500 190" />
+            <path d="M 170 470 C 280 520, 440 520, 500 430" />
+            <path d="M 830 150 C 700 120, 590 110, 500 190" />
+            <path d="M 830 470 C 690 500, 560 510, 500 430" />
+            <path d="M 500 190 C 530 240, 530 350, 500 430" />
+            <path d="M 170 150 C 330 310, 660 310, 830 150" />
+            <path d="M 170 470 C 340 320, 660 320, 830 470" />
+          </svg>
+
+          <article class="agent" style="--x: 100px; --y: 90px; --delay: 0s">
+            <h2>Agent A</h2>
+            <p>Identity signed</p>
+            <span class="status">Verifying</span>
+          </article>
+          <article class="agent" style="--x: 100px; --y: 410px; --delay: 0.8s">
+            <h2>Agent B</h2>
+            <p>Policy sandbox</p>
+            <span class="status">Negotiating</span>
+          </article>
+          <article class="agent" style="--x: 740px; --y: 90px; --delay: 1.6s">
+            <h2>Agent C</h2>
+            <p>Claims encrypted</p>
+            <span class="status">Syncing</span>
+          </article>
+          <article class="agent" style="--x: 740px; --y: 410px; --delay: 2.4s">
+            <h2>Agent D</h2>
+            <p>Proof attached</p>
+            <span class="status">Consensus</span>
+          </article>
+
+          <article class="validator" style="--x: 430px; --y: 150px">
+            <h3>Trust Layer</h3>
+            <p>Shared validator quorum</p>
+          </article>
+          <article class="validator" style="--x: 430px; --y: 390px">
+            <h3>Audit Layer</h3>
+            <p>Immutable attestations</p>
+          </article>
+        </div>
+      </section>
+
+      <section class="info-grid">
+        <article>
+          <h3>No central broker</h3>
+          <p>Each agent verifies peers through cryptographic proofs rather than a single trusted coordinator.</p>
+        </article>
+        <article>
+          <h3>On-chain handshake</h3>
+          <p>Session intents and policy decisions are committed as tamper-evident blocks.</p>
+        </article>
+        <article>
+          <h3>Continuous compliance</h3>
+          <p>Runtime state transitions are signed and observable for enterprise governance teams.</p>
+        </article>
+      </section>
+    </main>
+
+    <script src="script.js"></script>
+  </body>
+</html>
